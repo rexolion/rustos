@@ -1,0 +1,16 @@
+[package]
+name = "rust_os"
+version = "0.1.0"
+authors = ["rexolion"]
+edition = "2018"
+
+[dependencies]
+bootloader = "0.6.0"
+volatile = "0.2.3"
+
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
